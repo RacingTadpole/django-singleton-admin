@@ -1,0 +1,6 @@
+{% extends "admin/base.html" %}
+{# if you redefine the extrastyle block later, you'll need to add this in manually #}
+{# taken from http://blog.jupo.org/2012/10/26/sydjango-talk-django-admin-missing-manual/ #}
+{% block extrastyle %}
+{% if singleton %}<style>.deletelink-box, .submit-row input:not(.default) {display:none;}</style>{% endif %}
+{% endblock %}
