@@ -33,7 +33,7 @@ Quick start
 
 2. In your singleton model's admin.py file, register it with the admin using this class, e.g.::
 
-		from django_singleton_admin.admin import SingletonAdmin
+        from django_singleton_admin.admin import SingletonAdmin
 
         class GlobalSettingsAdmin(SingletonAdmin):
             pass
