@@ -7,7 +7,11 @@
 #      admin.site.register(Mymodel, SingletonAdmin)
 #
 
-from django.core.urlresolvers import reverse
+# Django 1.10 changed the import path for reverse.
+try:
+   from django.urls import reverse
+except ImportError:
+   from django.urls.resolvers import reverse
 from django.contrib import admin
 from django.http import HttpResponseRedirect
 from django.shortcuts import redirect

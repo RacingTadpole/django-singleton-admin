@@ -9,3 +9,7 @@ No change.
 0.0.4
 -----
 Added import statement to README for clarity.
+
+0.0.5
+-----
+Updated import statement in admin.py to work in Django 1.10 and later.
